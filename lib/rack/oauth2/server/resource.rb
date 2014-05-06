@@ -2,7 +2,7 @@ module Rack
   module OAuth2
     module Server
       class Resource < Abstract::Handler
-        ACCESS_TOKEN = 'rack.oauth2.access_token'
+        ACCESS_TOKEN = 'X-OAUTH2-ACCESS-TOKEN'
         DEFAULT_REALM = 'Protected by OAuth 2.0'
         attr_accessor :realm, :request
 
